@@ -1,0 +1,93 @@
+colors {
+    /* PRIMARY */
+    /* moderate blue */
+    background-color: hsl(238, 40%, 52%);
+    /* soft red */
+    background-color: hsl(358, 79%, 66%);
+    /* light grayish blue */
+    background-color: hsl(239, 57%, 85%);
+    /* pale red */
+    background-color: hsl(357, 100%, 86%);
+
+    /* NEUTRAL */
+    /* dark blue */
+    background-color: hsl(212, 24%, 26%);
+    /* grayish blue */
+    background-color: hsl(211, 10%, 45%);
+    /* light gray */
+    background-color: hsl(223, 19%, 93%);
+    /* very light gray */
+    background-color: hsl(228, 33%, 97%);
+    /* white */
+    background-color: hsl(0, 0%, 100%);
+}
+
+body {
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+* {
+    border: solid black;
+}
+
+.postContainer {
+    display: flex;
+}
+
+.likeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contentContainer {
+    padding: 10px;
+    width: 100%;
+}
+
+.top {
+    display: flex;
+    position: relative;
+}
+
+.replyButton {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.photoUserTime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.likeContainer {
+    text-align: center;
+}
+
+.user {
+    margin-left: 5px;
+}
+
+.time {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.plusLikesMinusContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: hsl(223, 19%, 93%);
+}
+
+.reply {
+    margin-left: 10%;
+}
+
+.attribution {
+    margin: 5px;
+}
