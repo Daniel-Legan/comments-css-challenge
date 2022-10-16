@@ -21,30 +21,38 @@ colors {
     /* white */
     background-color: hsl(0, 0%, 100%);
 }
+main {
+    min-width: 610px;
+}
 
 body {
-    width: 75%;
+    width: 55%;
     margin: auto;
     margin-top: 50px;
+    background: hsl(223, 19%, 93%);
 }
 
 * {
-    border: solid black;
+    /* border: solid black; */
+    border-radius: 0.6em;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
 }
 
 .postContainer {
     display: flex;
-}
-
-.likeContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    height: 150px;
+    background: white;
+    margin: 12px;
+    padding: 12px;
 }
 
 .contentContainer {
+    display: flex;
+    flex-direction: column;
     padding: 10px;
     width: 100%;
+    position: relative;
 }
 
 .top {
@@ -52,10 +60,12 @@ body {
     position: relative;
 }
 
-.replyButton {
-    position: absolute;
-    right: 0;
-    top: 0;
+p {
+    margin-top: 10px;
+    color: grey;
+    line-height: 1.5;
+    /* max-height: 500px; */
+    /* overflow-y: auto; */
 }
 
 .photoUserTime {
@@ -65,23 +75,31 @@ body {
 }
 
 .likeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+    color: hsl(238, 40%, 52%);
 }
 
 .user {
-    margin-left: 5px;
+    font-weight: bold;
+    margin-right: 5px;
 }
 
 .time {
     margin-left: 5px;
     margin-right: 5px;
+    color: grey;
 }
 
 .plusLikesMinusContainer {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     padding: 5px;
     background-color: hsl(223, 19%, 93%);
+    height: 50%;
 }
 
 .reply {
@@ -89,5 +107,99 @@ body {
 }
 
 .attribution {
-    margin: 5px;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
+
+input {
+    height: 100%;
+    width: 80%;
+    border: solid hsl(223, 19%, 93%);
+}
+
+.send {
+    /* position: absolute; */
+    /* right: 0; */
+    /* margin-right: 10px; */
+    margin-left: 10px;
+    height: 45px;
+    width: 85px;
+    background-color: hsl(238, 40%, 52%);
+    color: white;
+}
+
+.send:hover {
+    background: hsl(239, 57%, 85%);
+}
+
+.test {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+button {
+    border: none;
+}
+
+button:hover {
+    border: none;
+    cursor: pointer;
+}
+
+.replyButton {
+    background: white;
+    color: hsl(238, 40%, 52%);
+}
+
+.replyButton:hover {
+    color: hsl(239, 57%, 85%);
+}
+
+.deleteButton {
+    background: white;
+    color: hsl(358, 79%, 66%);
+}
+
+.deleteButton:hover {
+    color: hsl(357, 100%, 86%);
+}
+
+.editButton {
+    background: white;
+    color: hsl(238, 40%, 52%);
+}
+
+.editButton:hover {
+    color: hsl(239, 57%, 85%);
+}
+
+img {
+    height: 35px;
+    width: 35px;
+    float: left;
+    margin-right: 10px;
+}
+
+b {
+    color: hsl(238, 40%, 52%);
+}
+
+textarea {
+    /* height: 120px; */
+    border-color: hsl(223, 19%, 93%);
+    width: 75%;
+    padding: 5px;
+}
+
+.replyContainer {
+    flex-direction: row;
+}
+
+/* .text {
+
+    NOT WORKING AS INTENDED
+
+    max-height: 500px;
+    overflow-y: auto;
+} */
